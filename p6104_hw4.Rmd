@@ -1,0 +1,43 @@
+---
+title: "P6104"
+subtitle: "Homework 4"
+author: "Alexey Abramov"
+date:  "11/19/2020"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Setup
+```{r, setup}
+library(tidyverse)
+library(readr)
+library(janitor)
+
+knitr::opts_chunk$set(
+  fig.width = 6,
+  fig.asp = .6,
+  out.width = "90%"
+)
+
+theme_set(
+  ggthemes::theme_clean() + theme(legend.position = "bottom")
+  )
+
+options(
+  ggplot2.continuous.colour = "viridis",
+  ggplot2.continuous.colour = "viridis"
+)
+
+scale_colour_discrete = scale_color_viridis_d
+scale_fill_discrete = scale_fill_viridis_d
+```
+
+# Load in data
+
+## Miscode 
+```{r}
+read.table("data/miscode.data.txt")
+  
+```
